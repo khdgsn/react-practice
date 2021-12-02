@@ -1,0 +1,178 @@
+.App-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  border: solid;
+  margin-top: 50px;
+  
+}
+
+.App {
+  text-align: center;
+}
+
+/* nav bar */
+.nav-container {
+  display: flex;
+  padding-top: 10px;
+  align-items: left;
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: solid;
+  background-color: white;
+}
+
+.nav-links {
+    display: inline;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #84E296;
+}
+
+a:visited {
+  color: #54C03C;
+}
+
+
+/* body */
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: #550b0b;
+}
+
+.welContainer {
+  border: solid;
+  border-color: rgb(139, 72, 187);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2{
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  max-width: 60%;
+}
+
+.content {
+  border-radius: 14px;
+  border: solid;
+  border-color: #c96d3e;
+  padding: 5px;
+  background-color: #e0e0e0b4;
+  max-width: 60%;
+  margin-top: 10px;
+}
+
+.contentContainer{
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#test {
+  display: flex;
+}
+
+p {
+  border: solid;
+}
+
+.content-date {
+  font-size: x-small;
+  max-width: 10%;
+  border: solid;
+}
+
+.author {
+  border: solid;
+  border-color: hotpink;
+  font-size: small;
+  display: flex;
+  max-width: 35%
+}
+
+.avatar {
+  border: solid;
+  border-color: green;
+  display: inline-flex;
+  margin-top: 8px;
+}
+
+.authorName {
+  border: solid;
+  border-color: green;
+  display: inline-flex;
+}
+
+/* icons/ buttons */
+.buttons {
+  border: solid;
+  border-color: navy;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  padding-right: 5px
+}
+
+.likeButton {
+  border: solid;
+  border-color: lightgreen;
+  max-width: 10%;
+}
+
+.heartButton {
+  border: solid;
+  border-color: red;
+  max-width: 10%;
+}
+
+
+/* social media buttons */
+.social-container {
+  padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
+}
