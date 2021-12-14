@@ -1,9 +1,7 @@
 import React from 'react';
 import Icons from './icons.js';
-import image from './IMG_0806.PNG';
 
-
-export default function Content() {
+export default function Content(props) {
     let today = new Date();
 
     return (
@@ -12,7 +10,7 @@ export default function Content() {
                 <div className="author">
                     <div id="test">
                     <div className="avatar">
-                        <img src={image} alt="Author avatar" width="35px" height="35px">
+                        <img id={props.locator} src={props.avatar} alt="Author avatar" width="35px" height="35px">
                         </img>
                     </div>
                 <div className="authorName">
@@ -23,15 +21,9 @@ export default function Content() {
                     </div>
                 </div>
                 <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-tenetur error, harum nesciunt ipsum debitis quas aliquid
+                {props.paragraph}
                 </p>
-                <Icons />
+                <Icons locator={props.locator}/>
                 <p className="content-date">
                     {today.getDate()}/{today.getFullYear()}/{today.toLocaleTimeString()}
                 </p>
