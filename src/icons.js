@@ -6,7 +6,6 @@ import { MdPerson } from "react-icons/md";
 
 export default function Icons(props) {
   // like button & counter
-
   const [buttonLike, setButtonLike] = useState("rgb(0,0,0)");
   const [likeCounter, setLikeCounter] = useState(0);
 
@@ -38,7 +37,7 @@ export default function Icons(props) {
     setHeartCounter(heartCounter + 1);
   };
 
-  //func to make like button change avatar
+  //func to change avatar
   const changeImage = () => {
     let image = document.getElementById(props.locator);
     console.log(image);

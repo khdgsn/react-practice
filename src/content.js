@@ -19,14 +19,14 @@ export default function Content(props) {
               ></img>
             </div>
             <div className="authorName">
-              <p>Kathryn Hodgson</p>
+              <p>{props.author}</p>
             </div>
           </div>
         </div>
         <p>{props.paragraph}</p>
         <Icons locator={props.locator} />
         <p className="content-date">
-          {today.getDate()}/{today.getFullYear()}/{today.toLocaleTimeString()}
+          {today.getDate()}/{today.getMonth()}/{today.getFullYear()} - {today.toLocaleTimeString()}
         </p>
       </div>
     </div>
