@@ -102,19 +102,19 @@ function App() {
 
       <Content  /> */}
 
-      { <div locator="four" className="test">
+      { <div locator="one" className="test">
         {contArr.map((item) => {
           return(
-          <div key={item} className="arrayFour">
+          <div key={item} className="contArr">
            <Content />
-            <p>{item.author}</p>
-            <p>{item.story}</p>
-            <p>{item.image}</p>
+            {item.author}
+            {item.story}
+            {item.image}
           </div>
           );
         })}
       </div>
-       }
+      }
 
       <header>
         <SocialFollow />
