@@ -107,7 +107,7 @@ function App() {
           return(
           <div key={item} className="contArr">
            <Content />
-            {item.author}
+            {item.name}
             {item.story}
             {item.image}
           </div>
