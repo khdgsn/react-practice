@@ -107,10 +107,11 @@ function App() {
           return(
           
           <div key={item} className="contArr">
-           <Content />
+            <Content />
             {item.name}
             {item.story}
             {item.image}
+            
           </div>
           );
         })}
