@@ -69,13 +69,11 @@ function App() {
       { <div locator="one" className="test">
         {contArr.map((item) => {
           return(
-          <div key={item} className="contArr">
-            <Content >
-              {item.name}
-              {item.story}
-              {item.image}
+            <Content key={item.content} className="contArr">
+              <p key={item}>{item.name}</p>
+              <p key={item}>{item.story}</p>
+              <p key={item}>{item.img}</p>
             </Content>
-          </div>
           );
         })}
         
