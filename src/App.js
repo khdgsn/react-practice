@@ -23,7 +23,9 @@ axios.request(options).then(function (response) {
 });
 */
 
-function App() {
+function App(props)
+// do i need to use props somewhere for my .map() ?
+ {
   let contArr = [
     { name: "K", 
       story: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam.", 
@@ -68,7 +70,7 @@ function App() {
 
       { <div locator="one" className="test">
         {contArr.map((item) => {
-          return (
+          return(
             <Content key={item.content} className="contArr">
               {item.name}
               {item.story}
