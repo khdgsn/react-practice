@@ -26,7 +26,8 @@ export default function Content(props) {
         <p>{props.paragraph}</p>
         <Icons locator={props.locator} />
         <p className="content-date">
-          {today.getDate()}/{today.getMonth()}/{today.getFullYear()} - {today.toLocaleTimeString()}
+          {today.getDate()}/{today.getMonth()}/{today.getFullYear()} -{" "}
+          {today.toLocaleTimeString()}
         </p>
       </div>
     </div>
