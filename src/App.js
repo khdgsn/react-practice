@@ -71,10 +71,10 @@ function App(props)
       {contArr.map((item) => {
           return(
             <div key={item}>
-              <Content className="contArr" />
-              {item.name}
-              {item.story}
-              {item.img}
+              <Content />
+              <p key="name">{item.name}</p>
+              <p key="story">{item.story}</p>
+              <p key="img">{item.img}</p>
             </div>
             );
         })}
