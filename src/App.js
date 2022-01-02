@@ -48,10 +48,6 @@ function App()
   ];
   console.log(contArr);
 
-  const mapArr = contArr.map(item => {
-    return <Content>{item}</Content>
-  })
-
   return (
     <div className="App">
       <div className="nav-container">
@@ -72,19 +68,15 @@ function App()
         <h2>Hello and welcome to my blog</h2>
       </div>
       
-      {mapArr}
-      {/* {contArr.map((item) => {
-          return(
-            <div key={item}>
-              <Content />
+      <div>
+      {contArr.map(item => (
+            <div key={item.name + item.story}>
               {item.img}
               {item.name}
               {item.story}
             </div>
-            );
-        })}
-        {console.log()} */}
-        
+      ))};
+    </div>
 
       <header>
         <SocialFollow />
