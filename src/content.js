@@ -3,7 +3,7 @@ import Icons from "./icons.js";
 
 export default function Content(props) {
   let today = new Date();
-
+  console.log(props);
   return (
     <div className="contentContainer">
       <div className="content">

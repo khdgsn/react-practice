@@ -7,13 +7,14 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function SocialFollow() {
+export default function SocialFollow(props){
+
   return (
     <div className="social-container">
       <div className="social-container">
         <h3>Social Follow</h3>
         <a
-          href="https://www.youtube.com/c/jamesqquick"
+          href={props.youtube}
           target="_blank"
           rel="noreferrer"
           className="youtube social"
@@ -22,9 +23,10 @@ export default function SocialFollow() {
         </a>
 
         <a
-          href="https://www.facebook.com/learnbuildteach/"
+          href={props.facebook}
           target="_blank"
           rel="noreferrer"
+
           className="facebook social"
         >
           <FontAwesomeIcon icon={faFacebook} size="2x" />
