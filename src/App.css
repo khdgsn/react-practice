@@ -73,7 +73,7 @@ h2{
 .content {
   border-radius: 14px;
   border: solid;
-  border-color: #ff5500;
+  border-color: lightgray;
   padding: 5px;
   background-color: #e0e0e0b4;
   max-width: 60%;
