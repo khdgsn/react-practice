@@ -70,14 +70,18 @@ function App()
       
       <div>
       {contArr.map(item => (
-            <div key={item.name + item.story}>
+            <div key={item.name + item.story} >
               {item.img}
               {item.name}
               {item.story}
             </div>
-      ))};
-    </div>
+          )
+        )
+      };
 
+      <Content />
+
+    </div>
       <header>
         <SocialFollow />
       </header>
