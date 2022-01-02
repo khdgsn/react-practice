@@ -23,8 +23,7 @@ axios.request(options).then(function (response) {
 });
 */
 
-function App(props)
-// do i need to use props somewhere for my .map() ?
+function App()
  {
   let contArr = [
     { name: "K", 
@@ -47,7 +46,7 @@ function App(props)
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Lionhead_rabbit_Dobby.jpg/330px-Lionhead_rabbit_Dobby.jpg"
     }
   ];
-  //console.log(contArr);
+  console.log(contArr);
 
   return (
     <div className="App">
@@ -68,16 +67,19 @@ function App(props)
       <div className="welContainer">
         <h2>Hello and welcome to my blog</h2>
       </div>
+      
+      
       {contArr.map((item) => {
-        
           return(
-            <div key={props.item}>
+            <div key={item}>
               <Content />
+              {item.img}
               {item.name}
               {item.story}
             </div>
             );
         })}
+        
 
       <header>
         <SocialFollow />
