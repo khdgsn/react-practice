@@ -47,6 +47,7 @@ function App(props)
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Lionhead_rabbit_Dobby.jpg/330px-Lionhead_rabbit_Dobby.jpg"
     }
   ];
+  //console.log(contArr);
 
   return (
     <div className="App">
@@ -67,14 +68,13 @@ function App(props)
       <div className="welContainer">
         <h2>Hello and welcome to my blog</h2>
       </div>
-
       {contArr.map((item) => {
+        
           return(
-            <div key={item}>
+            <div key={props.item}>
               <Content />
-              <p key="name">{item.name}</p>
-              <p key="story">{item.story}</p>
-              <p key="img">{item.img}</p>
+              {item.name}
+              {item.story}
             </div>
             );
         })}
