@@ -30,7 +30,7 @@ function App(props)
     { name: "K", 
       story: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam.", 
       img: "https://pbs.twimg.com/profile_images/447374371917922304/P4BzupWu.jpeg"
-    },
+    }, 
 
     { name: "Kat", 
       story: "The Peacock's spectacular pattern of eyespots evolved to startle or confuse predators, make it one of the most easily recognized and best-known species.",
@@ -68,17 +68,16 @@ function App(props)
         <h2>Hello and welcome to my blog</h2>
       </div>
 
-      { <div locator="one" className="test">
-        {contArr.map((item) => {
+      {contArr.map((item) => {
           return(
             <div key={item}>
               <Content className="contArr" />
-              
+              {item.name}
+              {item.story}
+              {item.img}
             </div>
             );
         })}
-      </div>
-      }
 
       <header>
         <SocialFollow />
