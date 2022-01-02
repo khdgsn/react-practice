@@ -75,11 +75,10 @@ function App()
               {item.name}
               {item.story}
             </div>
-          )
+          ) 
         )
       };
-
-      <Content />
+      <Content/>
 
     </div>
       <header>
